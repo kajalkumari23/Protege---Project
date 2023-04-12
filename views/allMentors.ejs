@@ -1,0 +1,13 @@
+<h1>Heyyy this is dashboard of mentor</h1>
+<ul>
+  <% for(m of allmentors) { %>
+  <li>
+    <h1>Name: <%= m.m_name %></h1>
+    <h2>Email: <%= m.m_email %></h2>
+    <h2>Linkedin: <a href="<%= m.m_linkedin %>">Linkedin</a></h2>
+    <h2>Github: <a href="<%= m.m_github %>">Github</a></h2>
+    <h2>Year: <%= m.m_year %></h2>
+    <h2>Username: <%= m.m_username %></h2>
+  </li>
+  <% } %>
+</ul>

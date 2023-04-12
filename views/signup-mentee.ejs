@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>SignUp form</title>
+    <link rel="stylesheet" type="text/css" href="./css/style copy.css" />
+    <link rel="stylesheet" type="text/css" href="./css/style (2).css" />
+  </head>
+  <body>
+    <form action="/mentee-profile/:mentee_username" method="post">
+      <div class="card">
+        <div class="container">
+          <h2 align="center">
+            <b><u>Enter your Details</u></b>
+          </h2>
+          <br />
+          Name:<br />
+          <input
+            class="textbox"
+            type="text"
+            name="name"
+            placeholder="Enter Your Full Name"
+            size="35"
+            required
+          />
+          <br />
+          College Email id:<br />
+          <input
+            class="textbox"
+            type="email"
+            name="email"
+            placeholder="Enter Your Email id"
+            size="35"
+            required
+          />
+          <br />
+          Smart Card ID:<br />
+          <input
+            class="textbox"
+            name="smart_card"
+            placeholder="Enter Your Email id"
+            size="35"
+            required
+          />
+          <br />
+          LinkedIn:<br />
+          <input
+            class="textbox"
+            type="url"
+            name="Linkedln"
+            placeholder="Enter Your LinkedIn id"
+            size="35"
+          />
+          <br />
+          Github: <br />
+          <input
+            class="textbox"
+            type="url"
+            name="Github"
+            placeholder="Enter Your Github url"
+            size="35"
+          />
+          <br />
+          <!-- passing year -->
+          <select
+            class="textbox"
+            name="passing_Year"
+            style="width: 322px"
+            required
+          >
+            <option value="Defult">Select Your passing Year</option>
+            <option value="2021">2021</option>
+            <option value="2022">2022</option>
+            <option value="2023">2023</option>
+            <option value="2024">2024</option>
+            <option value="2025">2025</option>
+            <option value="2026">2026</option>
+          </select>
+          <div class="card1">
+            <div class="container1">
+              <h2><b>- Account Config -</b></h2>
+              <input
+                class="textbox"
+                type="text"
+                name="username"
+                placeholder="Enter Your Username"
+                size="35"
+                required
+              />
+              <br />
+              <input
+                class="textbox"
+                type="password"
+                name="pass"
+                placeholder="Enter Your Password"
+                size="35"
+                pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+                title="Must contain at least one number and one uppercase and lowercase letter, and at
+              least 8 or more characters"
+                required
+              />
+              <br />
+              <input
+                class="textbox"
+                type="password"
+                name="cpass"
+                placeholder="Confirm Password"
+                size="35"
+              />
+              <br />
+              <input type="checkbox" name="agree" value="true" /> I agree above
+              details.
+              <br />
+            </div>
+          </div>
+          <button>Submit</button>
+        </div>
+      </div>
+    </form>
+  </body>
+</html>

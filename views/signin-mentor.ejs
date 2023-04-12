@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Login Form</title>
+    <link rel="stylesheet" type="text/css" href="./css/style copy.css" />
+  </head>
+  <body>
+    <center>
+      <form action="/dashboard" method="post">
+        <div class="card">
+          <img class="User_img" src="./images/User.png" alt="User" />
+          <div class="container">
+            <h2><b>Sign In Form Mentor</b></h2>
+            User Name:
+            <input
+              class="textbox"
+              type="text"
+              name="username"
+              placeholder="Enter The Email-id"
+              size="35"
+            />
+            <br />
+            Password:
+            <input
+              class="textbox"
+              type="password"
+              name="password"
+              placeholder="Enter The Password"
+              size="35"
+            /><br />
+            <!-- <p>Enter Valid Details and <br>Please sign in your account.</p> -->
+            <a href="/signup-mentor">Sign up newcomers.!</a>
+            <br />
+            <!-- <input
+              class="btn_signin"
+              type="button"
+              name="signin"
+              value="Sign In"
+            /> -->
+            <button class="btn_signin" name="signin" value="Sign In">
+              Sign In
+            </button>
+            <input class="btn_clear" type="reset" name="clear" value="Clear" />
+          </div>
+        </div>
+      </form>
+    </center>
+  </body>
+</html>
